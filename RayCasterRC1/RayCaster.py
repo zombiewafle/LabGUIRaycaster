@@ -43,8 +43,9 @@ class GameState():
                 print(button2)
                 self.state = 'exit_game'
 
-
         screen.blit(menuIMG, (0,0))
+        screen.blit(menu, (-50,0))
+        screen.blit(menu, (700,0))
         drawText('Wolfenstein', font, pygame.Color("white"), screen, 400,100)
         drawText('New Order and the Origin of the Doom', font, pygame.Color("white"), screen, 200,150)
         button1.draw()
@@ -376,6 +377,8 @@ click = False
 
 img = pygame.image.load("textures/wallpaper.jpg")
 menuIMG = pygame.image.load("textures/logo.jpg")
+logo = pygame.image.load("textures/logoMenu.jpg")
+menu = pygame.image.load("menu.jpg")
 
 pygame.display.set_caption('The Origin of the Doom')
 
